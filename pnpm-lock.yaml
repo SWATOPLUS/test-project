@@ -12,6 +12,7 @@ specifiers:
   '@angular/platform-browser': ~13.0.0
   '@angular/platform-browser-dynamic': ~13.0.0
   '@angular/router': ~13.0.0
+  '@angular/service-worker': ~13.0.0
   '@types/jasmine': ~3.10.0
   '@types/node': ^12.11.1
   jasmine-core: ~3.10.0
@@ -34,12 +35,13 @@ dependencies:
   '@angular/platform-browser': 13.0.1_723c3d54f47acd13f24304313494426a
   '@angular/platform-browser-dynamic': 13.0.1_6146e645fd7235fb7c95e4538049248d
   '@angular/router': 13.0.1_99221ec01bc1639e10aa3bc49acf77e4
+  '@angular/service-worker': 13.0.1_ace3da5867013363c38368a16b7d8d6c
   rxjs: 7.4.0
   tslib: 2.3.1
   zone.js: 0.11.4
 
 devDependencies:
-  '@angular-devkit/build-angular': 13.0.2_675621164207f5e2e5d7cccba14067ca
+  '@angular-devkit/build-angular': 13.0.2_c40592ed1f6de1bb39639d5d5e64a45c
   '@angular/cli': 13.0.2
   '@angular/compiler-cli': 13.0.1_ffb0fe389b9d01a46dfa28711196672c
   '@types/jasmine': 3.10.2
@@ -72,7 +74,7 @@ packages:
       - chokidar
     dev: true
 
-  /@angular-devkit/build-angular/13.0.2_675621164207f5e2e5d7cccba14067ca:
+  /@angular-devkit/build-angular/13.0.2_c40592ed1f6de1bb39639d5d5e64a45c:
     resolution: {integrity: sha512-BIxRt+kgl2hrJOGzttMdhIm0P4inErZh9/aJyz6nOKa3XgsS7cDzEwph7TJqHTuEP4n+orl8hpbZOuxCUCvdVA==}
     engines: {node: ^12.20.0 || ^14.15.0 || >=16.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
     peerDependencies:
@@ -103,6 +105,7 @@ packages:
       '@angular-devkit/build-webpack': 0.1300.2_2a276e250a4c3f5feb1c13c394883128
       '@angular-devkit/core': 13.0.2
       '@angular/compiler-cli': 13.0.1_ffb0fe389b9d01a46dfa28711196672c
+      '@angular/service-worker': 13.0.1_ace3da5867013363c38368a16b7d8d6c
       '@babel/core': 7.15.8
       '@babel/generator': 7.15.8
       '@babel/helper-annotate-as-pure': 7.15.4
@@ -387,6 +390,19 @@ packages:
       '@angular/core': 13.0.1_rxjs@7.4.0+zone.js@0.11.4
       '@angular/platform-browser': 13.0.1_723c3d54f47acd13f24304313494426a
       rxjs: 7.4.0
+      tslib: 2.3.1
+    dev: false
+
+  /@angular/service-worker/13.0.1_ace3da5867013363c38368a16b7d8d6c:
+    resolution: {integrity: sha512-OJ1dIuJbnpa+XYebAZQT8bBE6F26c/pYMT5KSH3+PxCMxqzf18OwdVG3l9Ytt8YsEeL/5Wyz/zL1j4aUoNuCMQ==}
+    engines: {node: ^12.20.0 || ^14.15.0 || >=16.10.0}
+    hasBin: true
+    peerDependencies:
+      '@angular/common': 13.0.1
+      '@angular/core': 13.0.1
+    dependencies:
+      '@angular/common': 13.0.1_@angular+core@13.0.1+rxjs@7.4.0
+      '@angular/core': 13.0.1_rxjs@7.4.0+zone.js@0.11.4
       tslib: 2.3.1
     dev: false
 
