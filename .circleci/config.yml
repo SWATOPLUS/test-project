@@ -25,13 +25,13 @@ jobs:
       # The orb install-packages step will also automatically cache them for faster future runs.
       - run:
           name: Install pnpm 
-          command: npm install -g pnpm
+          command: sudo npm install -g pnpm
       - run:
           name: Install packages 
-          command: pnpm install
+          command: sudo pnpm install
       - run:
           name: Build
-          command: pnpm run build    
+          command: sudo pnpm run build    
 
 workflows:
   # Below is the definition of your workflow.
